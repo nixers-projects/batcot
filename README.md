@@ -2,11 +2,10 @@ Batcot
 ======
 
 iotek in-house solution for IRC automation and data dispensing
---------------------------------------------------------------
 
 Brought to you by dami-ooooh <dami0@iotek.org> & deadcat <dcat@iotek.org>
 
-     Copyright 2013-2014 also by those above mentioned cool cats.
+Copyright 2013-2014 also by those above mentioned cool cats.
 
 Commands:
 ---------
