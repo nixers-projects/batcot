@@ -1,6 +1,6 @@
-                                Batcot
+Batcot
 
-    iotek in-house solution for IRC automation and data dispensing
+iotek in-house solution for IRC automation and data dispensing
 
 Brought to you by dami-ooooh <dami0@iotek.org> & deadcat <dcat@iotek.org>
 
@@ -33,6 +33,6 @@ Complaints:
 ```
         It's best to use the IRC channel rather than my iotek mail since I
         haven't used in quite a while. If I'm unresponsive, send me a memo.
-        If you have no idea what that means "/msg memoserv help" for more
+        If you have no idea what that means; "/msg memoserv help" for more
         information, on the IRC server of course.
 ```
