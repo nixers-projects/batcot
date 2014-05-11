@@ -18,16 +18,9 @@ import datetime
 import pytz
 from math import floor
 from BeautifulSoup import BeautifulSoup
-from configs import settings
+from configs import settings, wordlist
 
 config = {}
-wordlist = {"bean": "Is the next level of rice.",
-            "milk": "Means squeezing out the most performance possible.",
-            "rice": "Involves large amounts of time",
-            "slienz": "May it be with you!",
-            "ask": "Don't.", 
-            "nixers": "Brought to you by the creators of the hit drama series, UnixHub!",
-            "yrmt": "Be right back!"}
 
 def get_title (url) :
 	bufsiz = 2048
@@ -159,6 +152,9 @@ def proc_cmd (c, e) :
                 msg = ' '.join(wordlist.keys())
                 msg = msg + " phrasing"
 
+        elif nick in admins and cmd == "reload" :
+                reload_s()
+
 	elif cmd == 'set' :
                 if len(t) < 3: return
                 t = t[1:]
@@ -189,6 +185,9 @@ def proc_cmd (c, e) :
         if msg: 
                 msg = "".join([nick, ": ", msg])
         	c.privmsg(e.target, "%s" % msg)
+
+def reload_s() :
+    from configs import wordlist
 
 def on_connect (c, e) :
 	if settings['ns_pass'] :
