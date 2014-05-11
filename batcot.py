@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python2.7
 # batcot barebone
 
 """
@@ -18,21 +18,7 @@ import datetime
 import pytz
 from math import floor
 from BeautifulSoup import BeautifulSoup
-
-settings = {
-	'prefix': ".",              # command prefix
-	'host': "irc.iotek.org",    # irc server address
-	'port': 6667,               # irc server port
-	'nick': "",                 # nickname
-	'user': "",                 # username
-	'real': "",                 # realname
-	'ssl' : ,                   # use SSL?
-	'chans': [],                # channels to join on connect
-	'ns_pass': "",              # set to None for no auth
-	'lastfm_key': ""            # last.fm e
-}
-
-import settings.conf
+from configs import settings
 
 config = {}
 wordlist = {"bean": "Is the next level of rice.",
@@ -40,8 +26,8 @@ wordlist = {"bean": "Is the next level of rice.",
             "rice": "Involves large amounts of time",
             "slienz": "May it be with you!",
             "ask": "Don't.", 
-            "nixers": "Brought to you by the creators of the hit drama series, UnixHub!"}
-            "yrmt": "Be right back!"
+            "nixers": "Brought to you by the creators of the hit drama series, UnixHub!",
+            "yrmt": "Be right back!"}
 
 def get_title (url) :
 	bufsiz = 2048
