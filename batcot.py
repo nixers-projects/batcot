@@ -150,7 +150,7 @@ def proc_cmd (c, e) :
                 msg = user_seen(t)
 
         elif cmd == 'help':
-                msg = 'http://pub.iotek.org/p/IlqwNb5'
+                msg = 'https://github.com/nixers-projects/batcot'
 
         elif cmd == 'ping':
                 msg = 'pong'
