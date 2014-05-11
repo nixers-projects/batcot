@@ -18,7 +18,6 @@ Usage & Commands:
 .tz     - prints time of the selected time zone, or the one saved by set
 .np     - returns the song now playing by supplied last.fm username or from set
 .ping   - pong
-.yrmt   - be right back
 ```
 
 Complaints:

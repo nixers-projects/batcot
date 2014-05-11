@@ -29,8 +29,10 @@ settings = {
 	'ssl' : ,                   # use SSL?
 	'chans': [],                # channels to join on connect
 	'ns_pass': "",              # set to None for no auth
-	'lastfm_key': "" # last.fm e
+	'lastfm_key': ""            # last.fm e
 }
+
+import settings.conf
 
 config = {}
 wordlist = {"bean": "Is the next level of rice.",
@@ -39,6 +41,7 @@ wordlist = {"bean": "Is the next level of rice.",
             "slienz": "May it be with you!",
             "ask": "Don't.", 
             "nixers": "Brought to you by the creators of the hit drama series, UnixHub!"}
+            "yrmt": "Be right back!"
 
 def get_title (url) :
 	bufsiz = 2048
@@ -181,7 +184,7 @@ def proc_cmd (c, e) :
                 if t[0] in setlist:            config[nick][t[0]] = t[1]
                 elif t[0] in cmdlist:          config[nick][t[0]] = response
 
-                f = open("settings.conf", "w")
+                f = open("users.conf", "w")
                 for nck in config:
                         prnt = nck
                         for key in config[nck]:
@@ -246,7 +249,7 @@ def on_pubmsg (c, e) :
 
 def read_conf() :
         
-        f = open("settings.conf", "r")
+        f = open("users.conf", "r")
         for line in f:
                 line = line.split("|_|")
                 config[line[0]] = {}
