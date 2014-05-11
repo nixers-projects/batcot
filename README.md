@@ -7,29 +7,18 @@ Brought to you by dami-ooooh <dami0@iotek.org> & deadcat <dcat@iotek.org>
 
 Copyright 2013-2014 also by those above mentioned cool cats.
 
-Commands:
----------
-```
-        .seen - displays time since users last message
-        .set  - sets the desired option to a value
-        .np   - last played/currently playing track
-        .tz   - displays the time in the current timezone
-        .list - lists descriptions available through .<word>
-        .ping - pong
-        .yrmt - be right back
-```
-
-
-Usage:
+Usage & Commands:
 ------
 ```
-        .seen  - takes argument of a username
-        .set   - takes argument of [tz/np] followed by timezone [GMT/EST] or
-                 last.fm username, NB: Caps in tz setting. Also available are
-                 best/worst, in the form of .set best/worst <message>
-        .np/tz - takes argument of timezone or user, if .set has been used,
-                 passing no argument will use the stored value. If passing an
-                 argument and .set has been used, the argument will override.
+.seen   - takes argument of a username
+.set    - takes argument of: tz <3 capital-letter code or zone/country>
+                             np <last.fm username>
+                             best <message>
+                             worst <message>
+.tz     - prints time of the selected time zone, or the one saved by set
+.np     - returns the song now playing by supplied last.fm username or from set
+.ping   - pong
+.yrmt   - be right back
 ```
 
 Complaints:
