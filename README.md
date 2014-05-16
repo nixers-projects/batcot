@@ -15,7 +15,8 @@ Usage & Commands:
                              np <last.fm username>
                              best <message>
                              worst <message>
-.tz     - prints time of the selected time zone, or the one saved by set
+.tz     - prints time of the selected time zone, or the one saved by set, it's
+          also possible to display the time for another user's set timezone
 .np     - returns the song now playing by supplied last.fm username or from set
 .ping   - pong
 ```
