@@ -135,6 +135,9 @@ def proc_cmd (c, e) :
                 msg = 'pong'
 
 	elif cmd == 'tz' :
+                if t[1] in config:
+                    if "tz" in config[t[1]]:
+                            t.append(config[t[1]]["tz"])
                 if nick in config:
                         if "tz" in config[nick]:
                                 t.append(config[nick]["tz"])
