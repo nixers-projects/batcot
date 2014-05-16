@@ -135,10 +135,11 @@ def proc_cmd (c, e) :
                 msg = 'pong'
 
 	elif cmd == 'tz' :
-                if t[1] in config:
+                if len(t) > 1 and t[1] in config:
+                    print t[1]
                     if "tz" in config[t[1]]:
-                            t.append(config[t[1]]["tz"])
-                if nick in config:
+                            t[1] = config[t[1]]["tz"]
+                elif nick in config:
                         if "tz" in config[nick]:
                                 t.append(config[nick]["tz"])
 		if len(t) < 2 : return
