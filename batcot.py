@@ -156,9 +156,6 @@ def proc_cmd (c, e) :
                 msg = ' '.join(wordlist.keys())
                 msg = msg + " phrasing"
 
-        elif nick in admins and cmd == "reload" :
-                reload_s()
-
 	elif cmd == 'set' :
                 if len(t) < 3: return
                 t = t[1:]
