@@ -37,7 +37,7 @@ def get_title (url) :
 		if soup.title.string :
 			if '://www.youtube.' in url or '://youtu.be' in url:
 				prefix = "\x02\x031,15YOU\x030,4TUBE\x03  "
-			if ".wikipedia.org/" in url: prefix = "\x02\x031,15WIKIPIDEA\x03  "
+			if ".wikipedia.org/" in url: prefix = "\x02\x031,15WIKIPEDIA\x03  "
 			return '%s%s' % (prefix, soup.title.string.strip())
 		else:
 			print("[ERROR] (title): no soup.title.string")
